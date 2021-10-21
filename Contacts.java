@@ -34,6 +34,15 @@ public class Contacts {
 		System.out.println("Enter EmailId : ");
 		email = scanner.next();
 	}
+
+	@Override
+	public String toString() {
+		return "Contacts [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city=" + city
+				+ ", state=" + state + ", zipCode=" + zipCode + ", phoneNumber=" + phoneNumber + ", email=" + email
+				+ "]";
+	}
+	
+	// generating getters and setter methods to access private variables
 	public String getFirst_name() {
 		return firstName;
 	}
